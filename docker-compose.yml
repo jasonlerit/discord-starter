@@ -1,0 +1,6 @@
+services:
+  discord-bot:
+    container_name: discord-bot
+    build:
+      context: .
+      target: production

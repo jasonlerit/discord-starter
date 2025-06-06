@@ -1,0 +1,10 @@
+services:
+  discord-bot:
+    container_name: discord-bot
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    command: npm run dev
