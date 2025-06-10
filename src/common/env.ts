@@ -8,6 +8,7 @@ import { Environment } from "@/common/types/environment.type"
 export const EnvSchema = z.object({
   NODE_ENV: z.string().default(Environment.DEVELOPMENT),
   LOG_LEVEL: z.enum(["fatal", "error", "warn", "info", "debug", "trace", "silent"]),
+  DISCORD_CLIENT_ID: z.string(),
   DISCORD_TOKEN: z.string(),
 })
 
