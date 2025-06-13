@@ -19,4 +19,7 @@ export default defineConfig([
       "perfectionist/sort-imports": "error",
     },
   },
+  {
+    ignores: ["dist"],
+  },
 ])
