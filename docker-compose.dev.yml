@@ -8,3 +8,5 @@ services:
       - ./:/app
       - /app/node_modules
     command: npm run dev
+    env_file:
+      - .env
